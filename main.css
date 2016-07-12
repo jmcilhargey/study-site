@@ -1,0 +1,138 @@
+body {
+  font-family: 'Karla', sans-serif !important;
+  background-color: #f8f8f8 !important;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}
+
+.navbar-brand, .navbar-text {
+  color: #fff !important;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.navbar-inverse {
+  margin: 0 !important;
+  border: none !important;
+}
+
+.navbar-default {
+  background: #2d2d2d !important;
+  border: none !important;
+}
+
+.fixed {
+  position: fixed !important;  
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn {
+  width: 37px;
+  margin-left: 10px;
+  border-radius: 50% !important;
+  color: white;
+  background: transparent;
+  border: 2px solid white !important;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+.container {
+  margin: auto;
+  max-width: 850px;
+}
+
+.space {
+  min-height: 70px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h4 {
+  line-height: 150% !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.ng-hide-remove {
+  animation: 0.5s fadeIn ease; 
+}
+
+pre code {
+	line-height: 2.0em;
+}
+
+pre {
+  background-color: #2d2d2d !important;
+  padding: 2.5em !important;
+	width: 90%;
+}
+
+pre .nocode { 
+  background-color: none; 
+  color: #000;
+}
+
+pre .str { 
+  color: #b9ca4a; 
+}
+pre .kwd { 
+  color: #c397d8; 
+  font-weight: bold; 
+}
+pre .com { 
+  color: #87ceeb;
+}
+
+pre .typ { 
+  color: #7aa6da;
+}
+
+pre .lit { 
+  color: #e78c45;
+}
+
+pre .pun {
+  color: #fff;
+}
+
+pre .pln {
+  color: #fff;
+}
+
+pre .tag {
+  color: #d54e53;
+  font-weight: bold;
+}
+
+pre .atn {
+  color: #e78c45;
+  font-weight: bold;
+}
+
+pre .atv {
+  color: #70c0b1; 
+}
+pre .dec {
+  color: #98fb98;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

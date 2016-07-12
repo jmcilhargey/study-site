@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>JS Algorithms Practice</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body ng-app="jsSolutions" ng-controller="MainController">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>JS Algorithms Practice</a>
+      </div>
+    </div>
+    <div class="navbar navbar-default">
+      <p class="navbar-text">Chapter:</p>
+      <a href="#chpt-1" class="btn navbar-btn">1</a>
+      <a href="#chpt-2" class="btn navbar-btn">2</a>
+      <a href="#chpt-3" class="btn navbar-btn">3</a>
+      <a href="#chpt-4" class="btn navbar-btn">4</a>
+      <a href="#chpt-5" class="btn navbar-btn">5</a>
+      <a href="#chpt-6" class="btn navbar-btn">6</a>
+      <a href="#chpt-7" class="btn navbar-btn">7</a>
+      <a href="#chpt-8" class="btn navbar-btn">8</a>
+      <a href="#chpt-9" class="btn navbar-btn">9</a>
+      <a href="#chpt-10" class="btn navbar-btn">10</a>
+      <a href="#chpt-11" class="btn navbar-btn">11</a>
+      <a href="#chpt-12" class="btn navbar-btn">16</a>
+    </div>
+    <div class="block">
+    </div>
+    <div class="container">
+      <div class="title">
+        <h1>Algorithm Work in Javascript</h1>
+        <h4>Examples referenced from Cracking the Coding Interview 6th Ed. by Gayle Laakmann McDowell</h4>
+      </div>
+      <div ng-repeat="chapter in problems.data">
+        <h2 class="title" id="chpt-{{ $index + 1 }}">{{ chapter.title }}</h2>
+        <div class ="question" ng-repeat="question in chapter.questions">
+          <a href="javascript:void(0)" ng-click="show = !show">
+            <h3>{{ question.name }}</h3>
+          </a>
+          <div ng-show="show">
+          <pre><code ng-bind-html="inject(question.code)"></code></pre>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+  </body>
+</html>
